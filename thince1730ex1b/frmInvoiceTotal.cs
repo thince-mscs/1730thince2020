@@ -21,5 +21,10 @@ namespace thince1730ex1b
         {
 
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
