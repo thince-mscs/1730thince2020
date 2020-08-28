@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace thince1730ex1b
 {
-    public partial class Form1 : Form
+    public partial class frmInvoiceTotal : Form
     {
-        public Form1()
+        public frmInvoiceTotal()
         {
             InitializeComponent();
+        }
+
+        private void btnCalculate_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
