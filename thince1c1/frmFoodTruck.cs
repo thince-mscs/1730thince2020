@@ -30,8 +30,11 @@ namespace thince1c1
              ).ToString("0.00");
             txtTax.Text =
             (Convert.ToDecimal(txtPretaxTotal.Text)
-            * Convert.ToDecimal(0.06875)).ToString("0.00");
-            txtTotal.Text = (Convert.ToDecimal(txtPretaxTotal.Text) + Convert.ToDecimal(txtTax.Text)).ToString("0.00");
+                * Convert.ToDecimal(0.06875)).ToString("0.00");
+            txtTotal.Text = (Convert.ToDecimal(txtPretaxTotal.Text) 
+                + Convert.ToDecimal(txtTax.Text)).ToString("0.00");
+
+            btnClear.Focus();
         }
 
         private void frmFoodTruck_Load(object sender, EventArgs e)
@@ -47,6 +50,24 @@ namespace thince1c1
         private void label4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            txtHotDogs.Text = "0";
+            txtHamburgers.Text = "0";
+            txtHotDogsSubtotal.Text = "";
+            txtHamburgersSubtotal.Text = "";
+            txtPretaxTotal.Text = "";
+            txtTax.Text = "";
+            txtTotal.Text = "";
+
+            txtHotDogs.Focus();
         }
     }
 }
