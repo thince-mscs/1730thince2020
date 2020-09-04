@@ -20,19 +20,11 @@ namespace thince1c1
         private void btnCalculate_Click(object sender, EventArgs e)
         {
             txtHotDogsSubtotal.Text = (
-                    4.0m * Convert.ToDecimal(txtHotDogs.Text)
-                ).ToString("0.00");
-            txtHamburgersSubtotal.Text = (
-                   5.0m * Convert.ToDecimal(txtHamburgers.Text)
-               ).ToString("0.00");
-            txtPretaxTotal.Text = (
-                Convert.ToDecimal(txtHotDogsSubtotal.Text) + Convert.ToDecimal(txtHamburgersSubtotal.Text)
-             ).ToString("0.00");
-            txtTax.Text =
-            (Convert.ToDecimal(txtPretaxTotal.Text)
-                * Convert.ToDecimal(0.06875)).ToString("0.00");
-            txtTotal.Text = (Convert.ToDecimal(txtPretaxTotal.Text) 
-                + Convert.ToDecimal(txtTax.Text)).ToString("0.00");
+                    4.0m * Convert.ToDecimal(txtHotDogs.Text) ).ToString("0.00");
+            txtHamburgersSubtotal.Text = ( 5.0m * Convert.ToDecimal(txtHamburgers.Text)  ).ToString("0.00");
+            txtPretaxTotal.Text = (Convert.ToDecimal(txtHotDogsSubtotal.Text) + Convert.ToDecimal(txtHamburgersSubtotal.Text)  ).ToString("0.00");
+            txtTax.Text =(Convert.ToDecimal(txtPretaxTotal.Text)  * Convert.ToDecimal(0.06875)).ToString("0.00");
+            txtTotal.Text = (Convert.ToDecimal(txtPretaxTotal.Text) + Convert.ToDecimal(txtTax.Text)).ToString("0.00");
 
             btnClear.Focus();
         }

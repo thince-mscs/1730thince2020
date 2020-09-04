@@ -54,6 +54,31 @@ namespace thince1d1
 
         private void button2_Click(object sender, EventArgs e)
         {
+            this.Close();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void txtAmountAustralia_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void txtAmountBhutan_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtAmountKrone_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtAmountEuro_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

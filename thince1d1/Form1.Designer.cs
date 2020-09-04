@@ -54,10 +54,10 @@
             this.txtUSDBhutan = new System.Windows.Forms.TextBox();
             this.txtUSDKrone = new System.Windows.Forms.TextBox();
             this.txtUSDEuro = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.txtTotalUSD = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.btnReset = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
+            this.btnReset = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -210,6 +210,7 @@
             this.txtAmountAustralia.TabIndex = 0;
             this.txtAmountAustralia.TabStop = false;
             this.txtAmountAustralia.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtAmountAustralia.TextChanged += new System.EventHandler(this.txtAmountAustralia_TextChanged);
             // 
             // txtAmountBhutan
             // 
@@ -219,6 +220,7 @@
             this.txtAmountBhutan.TabIndex = 1;
             this.txtAmountBhutan.TabStop = false;
             this.txtAmountBhutan.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtAmountBhutan.TextChanged += new System.EventHandler(this.txtAmountBhutan_TextChanged);
             // 
             // txtAmountKrone
             // 
@@ -228,6 +230,7 @@
             this.txtAmountKrone.TabIndex = 2;
             this.txtAmountKrone.TabStop = false;
             this.txtAmountKrone.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtAmountKrone.TextChanged += new System.EventHandler(this.txtAmountKrone_TextChanged);
             // 
             // txtAmountEuro
             // 
@@ -237,6 +240,7 @@
             this.txtAmountEuro.TabIndex = 3;
             this.txtAmountEuro.TabStop = false;
             this.txtAmountEuro.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtAmountEuro.TextChanged += new System.EventHandler(this.txtAmountEuro_TextChanged);
             // 
             // txtRateAustralia
             // 
@@ -312,15 +316,15 @@
             this.txtUSDEuro.Text = "0.00";
             this.txtUSDEuro.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox13
+            // txtTotalUSD
             // 
-            this.textBox13.Location = new System.Drawing.Point(657, 198);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.ReadOnly = true;
-            this.textBox13.Size = new System.Drawing.Size(127, 20);
-            this.textBox13.TabIndex = 23;
-            this.textBox13.TabStop = false;
-            this.textBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtTotalUSD.Location = new System.Drawing.Point(657, 198);
+            this.txtTotalUSD.Name = "txtTotalUSD";
+            this.txtTotalUSD.ReadOnly = true;
+            this.txtTotalUSD.Size = new System.Drawing.Size(127, 20);
+            this.txtTotalUSD.TabIndex = 23;
+            this.txtTotalUSD.TabStop = false;
+            this.txtTotalUSD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label9
             // 
@@ -332,16 +336,6 @@
             this.label9.TabIndex = 22;
             this.label9.Text = "+";
             // 
-            // btnReset
-            // 
-            this.btnReset.Location = new System.Drawing.Point(217, 233);
-            this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(127, 23);
-            this.btnReset.TabIndex = 4;
-            this.btnReset.Text = "&Reset";
-            this.btnReset.UseVisualStyleBackColor = true;
-            this.btnReset.Click += new System.EventHandler(this.button1_Click);
-            // 
             // btnExit
             // 
             this.btnExit.Location = new System.Drawing.Point(350, 233);
@@ -352,15 +346,25 @@
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.button2_Click);
             // 
+            // btnReset
+            // 
+            this.btnReset.Location = new System.Drawing.Point(217, 233);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(127, 23);
+            this.btnReset.TabIndex = 24;
+            this.btnReset.Text = "&Reset";
+            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(828, 296);
-            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnReset);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBox13);
+            this.Controls.Add(this.txtTotalUSD);
             this.Controls.Add(this.txtUSDEuro);
             this.Controls.Add(this.txtUSDKrone);
             this.Controls.Add(this.txtUSDBhutan);
@@ -425,10 +429,10 @@
         private System.Windows.Forms.TextBox txtUSDBhutan;
         private System.Windows.Forms.TextBox txtUSDKrone;
         private System.Windows.Forms.TextBox txtUSDEuro;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox txtTotalUSD;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Button btnReset;
     }
 }
 
