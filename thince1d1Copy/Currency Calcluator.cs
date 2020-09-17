@@ -74,5 +74,15 @@ namespace thince1d1Copy
         {
             txtUSDEuro.Text = (Convert.ToDecimal(txtAmountEuro.Text) * Convert.ToDecimal(txtRateEuro.Text)).ToString("0.00");
         }
+
+        private void txtTotalUSD_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

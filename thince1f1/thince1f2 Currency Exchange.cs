@@ -17,13 +17,9 @@ namespace thince1f1
             InitializeComponent();
         }
 
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Form1_Load(object sender, EventArgs e)
         {
+            txtCurrency.Select();
             btnAustralia.BackgroundImage = picAustralia.Image;
             btnBhutan.BackgroundImage = picBhutanDim.Image;
             btnKrone.BackgroundImage = picKroneDim.Image;
@@ -32,8 +28,6 @@ namespace thince1f1
             lblCurrency.Text = btnAustralia.Text + ": ";
             txtUSDollars.Text = "0.00";
             txtTotalUSD.Text = "0.00";
-            txtCurrency.Focus();
-
         }
 
         private void btnAustralia_Click(object sender, EventArgs e)
@@ -44,6 +38,7 @@ namespace thince1f1
             btnEuro.BackgroundImage = picEuroDim.Image;
             lblCurrency.Text = btnAustralia.Text + ": ";
             txtRate.Text = "0.725832";
+            txtCurrency.Focus();
         }
 
         private void btnBhutan_Click(object sender, EventArgs e)
@@ -54,6 +49,7 @@ namespace thince1f1
             btnAustralia.BackgroundImage = picAustraliaDim.Image;
             lblCurrency.Text = btnBhutan.Text + ": ";
             txtRate.Text = "0.0136087";
+            txtCurrency.Focus();
         }
 
         private void btnKrone_Click(object sender, EventArgs e)
@@ -64,6 +60,7 @@ namespace thince1f1
             btnEuro.BackgroundImage = picEuroDim.Image;
             lblCurrency.Text = btnKrone.Text + ": ";
             txtRate.Text = "0.11943";
+            txtCurrency.Focus();
         }
 
         private void btnEuro_Click(object sender, EventArgs e)
@@ -74,26 +71,19 @@ namespace thince1f1
             btnKrone.BackgroundImage = picKroneDim.Image;
             lblCurrency.Text = btnEuro.Text + ": ";
             txtRate.Text = "1.18429";
-        }
-
-        private void lblCurrency_Click(object sender, EventArgs e)
-        {
-
+            txtCurrency.Focus();
         }
 
         private void calcUSD(object sender, EventArgs e)
         {
-
-        }
-
-        private void txtCurrency_Enter(object sender, EventArgs e)
-        {
-            txtCurrency.SelectAll();
+            txtUSDollars.Text = (Convert.ToDecimal(txtRate.Text)
+                 * Convert.ToDecimal(txtCurrency.Text)).ToString("0.00");
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            lblEquation.Text = lblEquation.Text + " + " + txtTotalUSD.Text;
+            lblEquation.Text = lblEquation.Text + " + " + txtUSDollars.Text;
+            txtTotalUSD.Text = (Convert.ToDecimal(txtTotalUSD.Text) + Convert.ToDecimal(txtUSDollars.Text)).ToString("0.00");
         }
 
         private void btnReset_Click(object sender, EventArgs e)
@@ -102,17 +92,13 @@ namespace thince1f1
             txtUSDollars.Text = "0.00";
             txtTotalUSD.Text = "0.00";
             lblEquation.Text = "";
+            txtCurrency.Focus();
+            btnAustralia.PerformClick();
         }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void txtUSDollars_TextChanged(object sender, EventArgs e)
-        {
-            txtUSDollars.Text = (Convert.ToDecimal(txtRate.Text) * Convert.ToDecimal(txtCurrency.Text)).ToString("0.00");
-
         }
     }
 }

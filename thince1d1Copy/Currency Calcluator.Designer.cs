@@ -286,6 +286,7 @@
             this.txtTotalUSD.Size = new System.Drawing.Size(127, 20);
             this.txtTotalUSD.TabIndex = 10;
             this.txtTotalUSD.TabStop = false;
+            this.txtTotalUSD.TextChanged += new System.EventHandler(this.txtTotalUSD_TextChanged);
             // 
             // btnReset
             // 
@@ -390,6 +391,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form1";
             this.Text = "Currency Calculatorthince1d1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

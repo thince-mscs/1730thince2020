@@ -37,7 +37,6 @@
             this.btnReset = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.txtCurrency = new System.Windows.Forms.TextBox();
-            this.process1 = new System.Diagnostics.Process();
             this.picKroneDim = new System.Windows.Forms.PictureBox();
             this.picEuroDim = new System.Windows.Forms.PictureBox();
             this.picBhutanDim = new System.Windows.Forms.PictureBox();
@@ -97,7 +96,6 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(0, 13);
             this.label4.TabIndex = 24;
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
@@ -146,17 +144,6 @@
             this.txtCurrency.Text = "0.00";
             this.txtCurrency.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtCurrency.TextChanged += new System.EventHandler(this.calcUSD);
-            this.txtCurrency.Enter += new System.EventHandler(this.txtCurrency_Enter);
-            // 
-            // process1
-            // 
-            this.process1.StartInfo.Domain = "";
-            this.process1.StartInfo.LoadUserProfile = false;
-            this.process1.StartInfo.Password = null;
-            this.process1.StartInfo.StandardErrorEncoding = null;
-            this.process1.StartInfo.StandardOutputEncoding = null;
-            this.process1.StartInfo.UserName = "";
-            this.process1.SynchronizingObject = this;
             // 
             // picKroneDim
             // 
@@ -302,7 +289,6 @@
             this.lblCurrency.Size = new System.Drawing.Size(125, 25);
             this.lblCurrency.TabIndex = 20;
             this.lblCurrency.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblCurrency.Click += new System.EventHandler(this.lblCurrency_Click);
             // 
             // txtRate
             // 
@@ -323,7 +309,6 @@
             this.txtUSDollars.TabIndex = 48;
             this.txtUSDollars.TabStop = false;
             this.txtUSDollars.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtUSDollars.TextChanged += new System.EventHandler(this.txtUSDollars_TextChanged);
             // 
             // txtTotalUSD
             // 
@@ -411,7 +396,6 @@
         private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.TextBox txtCurrency;
-        private System.Diagnostics.Process process1;
         private System.Windows.Forms.PictureBox picAustralia;
         private System.Windows.Forms.PictureBox picEuro;
         private System.Windows.Forms.PictureBox picKrone;
