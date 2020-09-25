@@ -86,6 +86,7 @@
             this.txtSubtotal.Name = "txtSubtotal";
             this.txtSubtotal.Size = new System.Drawing.Size(100, 20);
             this.txtSubtotal.TabIndex = 1;
+            this.txtSubtotal.TextChanged += new System.EventHandler(this.txtSubtotal_TextChanged);
             // 
             // txtDiscountPercent
             // 
@@ -150,6 +151,7 @@
             this.Controls.Add(this.label1);
             this.Name = "frmInvoiceTotal";
             this.Text = "thince1b1: Invoice Total Form";
+            this.Load += new System.EventHandler(this.frmInvoiceTotal_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

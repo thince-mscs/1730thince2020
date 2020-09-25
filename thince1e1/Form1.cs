@@ -48,12 +48,12 @@ namespace thince1e1
 
         private void txtTest1_TextChanged(object sender, EventArgs e)
         {
-          
+            
         }
 
         private void txtTest2_TextChanged(object sender, EventArgs e)
         {
-
+          
         }
 
         private void txtTest3_TextChanged(object sender, EventArgs e)

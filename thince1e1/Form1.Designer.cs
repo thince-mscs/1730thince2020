@@ -124,7 +124,7 @@
             this.txtTest2.Name = "txtTest2";
             this.txtTest2.Size = new System.Drawing.Size(58, 20);
             this.txtTest2.TabIndex = 8;
-            this.txtTest2.Text = "0";
+            this.txtTest2.Text = "1";
             this.txtTest2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtTest2.TextChanged += new System.EventHandler(this.txtTest2_TextChanged);
             // 

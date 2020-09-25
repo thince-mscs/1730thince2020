@@ -78,6 +78,7 @@ namespace thince1f1
         {
             txtUSDollars.Text = (Convert.ToDecimal(txtRate.Text)
                  * Convert.ToDecimal(txtCurrency.Text)).ToString("0.00");
+
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
