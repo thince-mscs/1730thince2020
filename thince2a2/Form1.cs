@@ -23,16 +23,18 @@ namespace thince2a2
             //     (Convert.ToDecimal(txtSubtotal.Text)
             //     * Convert.ToDecimal(txtDiscountPercent.Text) / 100).ToString("0.00");
 
-            int DiscountPercent = Convert.ToInt32(txtDiscountPercent.Text);
-            decimal DiscountPercent = 5.0m;
-            decimal DiscountAmount = DiscountPercent * txtSubtotal / 100;
-            txtDiscountAmount.Text = DiscountAmount.ToString("0.00");
+            decimal subtotal = Convert.ToDecimal(txtSubtotal.Text);
+            decimal discountPercent = Convert.ToDecimal(txtDiscountPercent.Text);
+            decimal discountAmount = (discountPercent * subtotal) / 100;
+            txtDiscountAmount.Text = discountAmount.ToString("0.00");
+            decimal total = subtotal - discountAmount;
+            txtTotal.Text = total.ToString("0.00");
+
 
             //txtTotal.Text =
             //     (Convert.ToDecimal(txtSubtotal.Text)
             //     - Convert.ToDecimal(txtDiscountAmount.Text)).ToString("0.00");
-            decimal total = txtSubtotal - txtDiscountAmount;
-            txtTotal.Text = total.ToString("0.00");
+            
             
         }
 
