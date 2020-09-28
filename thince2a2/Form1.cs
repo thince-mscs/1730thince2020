@@ -21,7 +21,7 @@ namespace thince2a2
         {
             //txtDiscountAmount.Text =
             //     (Convert.ToDecimal(txtSubtotal.Text)
-            //     * Convert.ToDecimal(txtDiscountPercent.Text) / 100).ToString("0.00");
+            //    * Convert.ToDecimal(txtDiscountPercent.Text) / 100).ToString("0.00");
 
             decimal subtotal = Convert.ToDecimal(txtSubtotal.Text);
             decimal discountPercent = Convert.ToDecimal(txtDiscountPercent.Text);
