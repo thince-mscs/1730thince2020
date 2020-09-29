@@ -40,6 +40,7 @@ namespace thince2b2
             txtUSDEuro.Text = usdEuro.ToString("0.00");
 
             decimal totalUSD = usdAustralia + usdBhutan + usdKrone + usdEuro;
+            txtTotalUSD.Text = totalUSD.ToString("0.00");
 
         }
 
