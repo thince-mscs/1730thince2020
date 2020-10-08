@@ -67,60 +67,95 @@ namespace thince2d2
             textBox9ResultA.Text = "Fail";
             textBox10ResultA.Text = "Fail";
 
+            textBox1ResultB.Text = "Success";
+            textBox2ResultB.Text = "Success";
+            textBox3ResultB.Text = "Success";
+            textBox4ResultB.Text = "Success";
+            textBox5ResultB.Text = "Success";
+            textBox6ResultB.Text = "Success";
+            textBox7ResultB.Text = "Success";
+            textBox8ResultB.Text = "Success";
+            textBox9ResultB.Text = "Success";
+            textBox10ResultB.Text = "Success";
+
             if (textBox1Input.Text == "Frank")
                 textBox1ResultA.Text = "Success";
+            if (textBox1Input.Text != "Frank")
+                textBox1ResultB.Text = "Fail";
 
             if (textBox2Input.Text == "")
                 textBox2ResultA.Text = "Success";
+            if (textBox2Input.Text != "")
+                textBox2ResultB.Text = "Fail";
 
-            //   if (textBox3Input.Text == "2.3")
-            //       textBox3ResultA.Text = "Success";
+        
             decimal val3 = Convert.ToDecimal(textBox3Input.Text);
             if (val3 == 2.3m)
                 textBox3ResultA.Text = "Success";
+            if (val3 != 2.3m)
+                textBox3ResultB.Text = "Fail";
 
-            //   if (textBox4Input.Text == "false")
-            //       textBox4ResultA.Text = "Success";
             bool val4 = Convert.ToBoolean(textBox4Input.Text);
             if (val4 == false)
                 textBox4ResultA.Text = "Success";
+            if (val4 == true)
+                textBox4ResultB.Text = "Fail";
 
-         
-            decimal val5 = Convert.ToDecimal(textBox5InputA.Text);
-            if (val5 == 3m)
-                textBox5ResultA.Text = "Fail";
-            if (val5 == 2m)
+
+            decimal val5a = Convert.ToDecimal(textBox5InputA.Text);
+            if (val5a == 2m)
                 textBox5ResultA.Text = "Success";
+            if (val5a != 2m)
+                textBox5ResultB.Text = "Fail";
+
+            decimal val5b = Convert.ToDecimal(textBox5InputA.Text);
+            if (val5b == 2m)
+                textBox5ResultA.Text = "Success";
+            if (val5b != 3m)
+                textBox5ResultB.Text = "Fail";
 
 
-
-                if (textBox6Input.Text == "xyz")
+            if (textBox6Input.Text == "xyz")
                 textBox6ResultA.Text = "Success";
+            if (textBox6Input.Text != "xyz")
+                textBox6ResultB.Text = "Fail";
 
             if (textBox7Input.Text == "1")
                 textBox7ResultA.Text = "Success";
+            if (textBox7Input.Text != "1")
+                textBox7ResultB.Text = "Fail";
 
-            if (textBox8InputA.Text == "1")
+            int val8a = Convert.ToInt32(textBox8InputA.Text);
+            int val8b = Convert.ToInt32(textBox8InputA.Text);
+            if (val8a < val8b)
                 textBox8ResultA.Text = "Success";
-            decimal val8 = Convert.ToDecimal(textBox8InputB.Text);
-            if (val8 == 1m)
-                textBox8ResultA.Text = "Fail";
+          
+           // ??? Not sure what's going on here 
+
+
 
             if (textBox9Input.Text == "500")
                 textBox9ResultA.Text = "Success";
+            if (textBox9Input.Text != "500")
+                textBox9ResultB.Text = "Fail";
 
-           if (textBox10InputA.Text == "2")
-              textBox10ResultA.Text = "Success";
-            if (textBox10InputA.Text == "4")
-                textBox10ResultA.Text = "Fail";
+            //if (textBox10InputA.Text == "2")
+            //  textBox10ResultA.Text = "Success";
+            //if (textBox10InputA.Text != "4")
+            //    textBox10ResultA.Text = "Fail";
 
-            decimal val10 = Convert.ToDecimal(textBox10InputB.Text);
-            if (val10 == 3m)
+            decimal val10a = Convert.ToDecimal(textBox10InputB.Text);
+            decimal val10b = Convert.ToDecimal(textBox10InputB.Text);
+            if (val10a <= val10b)
                 textBox10ResultA.Text = "Success";
+            if (val10a == 3m)
+                textBox10ResultB.Text = "Fail";
+            if (val10a < val10b)
+                textBox10ResultA.Text = "Success";
+            if (val10b == 3m)
+                textBox10ResultB.Text = "Fail";
 
-          //  decimal val10 = Convert.ToDecimal(textBox10InputA.Text);
-         //   if (val10 != 3m)
-         //      textBox10ResultA.Text = "Fail";
+
 
 
         }
