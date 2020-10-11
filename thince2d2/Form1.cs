@@ -102,18 +102,13 @@ namespace thince2d2
                 textBox4ResultB.Text = "Fail";
 
 
+
             decimal val5a = Convert.ToDecimal(textBox5InputA.Text);
-            if (val5a == 2m)
+            decimal val5b = Convert.ToDecimal(textBox5InputA.Text);        
+            if (val5a == val5b)
                 textBox5ResultA.Text = "Success";
-            if (val5a != 2m)
+            if (val5a < val5b)
                 textBox5ResultB.Text = "Fail";
-
-            decimal val5b = Convert.ToDecimal(textBox5InputA.Text);
-            if (val5b == 2m)
-                textBox5ResultA.Text = "Success";
-            if (val5b != 3m)
-                textBox5ResultB.Text = "Fail";
-
 
             if (textBox6Input.Text == "xyz")
                 textBox6ResultA.Text = "Success";
@@ -128,34 +123,37 @@ namespace thince2d2
             int val8a = Convert.ToInt32(textBox8InputA.Text);
             int val8b = Convert.ToInt32(textBox8InputA.Text);
             if (val8a < val8b)
-                textBox8ResultA.Text = "Success";
-          
-           // ??? Not sure what's going on here 
-
-
+                textBox8ResultA.Text = "Success";       
+            if (val8a >= val8b)
+                textBox8ResultB.Text = "Fail";
+         
 
             if (textBox9Input.Text == "500")
                 textBox9ResultA.Text = "Success";
             if (textBox9Input.Text != "500")
                 textBox9ResultB.Text = "Fail";
 
-            //if (textBox10InputA.Text == "2")
-            //  textBox10ResultA.Text = "Success";
-            //if (textBox10InputA.Text != "4")
-            //    textBox10ResultA.Text = "Fail";
-
             decimal val10a = Convert.ToDecimal(textBox10InputB.Text);
             decimal val10b = Convert.ToDecimal(textBox10InputB.Text);
-            if (val10a <= val10b)
-                textBox10ResultA.Text = "Success";
-            if (val10a == 3m)
-                textBox10ResultB.Text = "Fail";
             if (val10a < val10b)
-                textBox10ResultA.Text = "Success";
-            if (val10b == 3m)
+                textBox10ResultA.Text = "Success";          
+            if (val10a > val10b)
                 textBox10ResultB.Text = "Fail";
+            
 
-
+            //textBox1Input.Text = "Frank";
+            //textBox2Input.Text = "";
+            //textBox3Input.Text = "2.3";
+            //textBox4Input.Text = "false";
+            //textBox5InputA.Text = "2";
+            //textBox5InputB.Text = "2";
+            //textBox6Input.Text = "xyz";
+            //textBox7Input.Text = "1";
+            //textBox8InputA.Text = "1";
+            //textBox8InputB.Text = "2";
+            //textBox9Input.Text = "500";
+            //textBox10InputA.Text = "2";
+            //textBox10InputB.Text = "3";
 
 
         }
