@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace thince2e1
 {
-    class LogicalOperations
+    public class LogicalOperations
     {
         public static bool q01(decimal subtotal)
         {
@@ -34,27 +34,42 @@ namespace thince2e1
         }
         public static bool q06(bool isValid, int years, int counter)
         {
-            return isValid == true && counter++ < years;
+            return isValid == true | counter++ < years;
 
         }
-        public static bool q07(bool isValid, decimal date, decimal startDate, decimal expirationDate)
+        public static bool q07(DateTime startDate, DateTime expirationDate, DateTime date, bool isValid)
         {
             return date > startDate && date < expirationDate || isValid == true;
 
         }
-        public static bool q08(decimal thisYTD, decimal lastYTD, int startYear, int currentYear, string empType)
+        public static bool q08(decimal thisYTD, decimal lastYTD, string empType, int startYear, int currentYear)
         {
             return thisYTD > lastYTD || empType == "Part time" && startYear < currentYear;
 
         }
-        public static bool q09(int years, int counter)
+        public static bool q09(int counter, int years)
         {
             return !(counter++ >= years);
 
         }
-        public static int q10(int a,int  b,int  c,int  d)
+        public static bool q10(int a,int  b,int  c,int  d)
         {
-            return a + b * c - d;
+            return a > b && b < c || c < d;
+        
+        }
+        public static bool q11(bool member, decimal price, float weight)
+        {
+            return member == true || price >= 25m || weight <= 1.0;
+
+        }
+        public static bool q12(bool member, decimal price, float weight)
+        {
+            return member == true || price >= 25m && weight < 1.0;
+
+        }
+        public static bool q13(string shipState, string itemType)
+        {
+            return shipState == !MN && itemType == Electronics;
 
         }
     }

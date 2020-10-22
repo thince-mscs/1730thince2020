@@ -35,6 +35,9 @@ namespace thince2e1
             result09TextBox.Text = "";
             result09bTextBox.Text = "";
             result10TextBox.Text = "";
+            result11TextBox.Text = "";
+            result12TextBox.Text = "";
+            result13TextBox.Text = "";
 
             // #01
             //result01TextBox.Text = (subtotal >= 250 && subtotal < 500).ToString();
@@ -105,7 +108,7 @@ namespace thince2e1
             int currentYear = Convert.ToInt32(input08eTextBox.Text);
             result08TextBox.Text = (
                 //((thisYTD > lastYTD || empType == "Part time") && startYear < currentYear
-                LogicalOperations.q08(thisYTD, lastYTD, startYear, currentYear, empType) //??? Not sure what to do with emptype I believe it's string empType
+                LogicalOperations.q08(thisYTD, lastYTD, empType, currentYear, startYear) //??? Not sure what to do with emptype I believe it's string empType
                 ).ToString();
 
 
@@ -114,7 +117,7 @@ namespace thince2e1
             years = Convert.ToInt32(input09bTextBox.Text);
             result09TextBox.Text = (
                     //!(counter++ >= years)
-                    LogicalOperations.q09(years, counter)
+                    LogicalOperations.q09(counter, years)
                 ).ToString();
             result09bTextBox.Text = counter.ToString();
 
@@ -124,7 +127,7 @@ namespace thince2e1
             int c = Convert.ToInt32(input10cTextBox.Text);
             int d = Convert.ToInt32(input10dTextBox.Text);
             result10TextBox.Text = (
-                //a + b * c - d
+                //a > b && b < c || c < d;
                 LogicalOperations.q10(a,b,c,d)
                 ).ToString();
             //bool v = a > b;
@@ -134,6 +137,27 @@ namespace thince2e1
             //bool z = y || x;
             //result10TextBox.Text = z.ToString();
 
+            // #11
+            bool member = Convert.ToBoolean(input11aTextBox.Text);
+            decimal price = Convert.ToDecimal(input11bTextBox.Text);
+            float weight = Convert.ToSingle(input11cTextBox.Text);
+            result11TextBox.Text = (
+                LogicalOperations.q11(member, price, weight)).ToString();
+
+            // #12
+            member = Convert.ToBoolean(input12aTextBox.Text);
+            price = Convert.ToDecimal(input12bTextBox.Text);
+            weight = Convert.ToSingle(input12cTextBox.Text);
+            result12TextBox.Text = (
+                LogicalOperations.q12(member, price, weight)
+                ).ToString();
+
+            // #13
+            string shipState = input13aTextBox.Text;
+            string itemType = input13bTextBox.Text;
+            result13TextBox.Text = (
+                LogicalOperations.q13(shipState, itemType)
+                ).ToString();
         }
     }
 }

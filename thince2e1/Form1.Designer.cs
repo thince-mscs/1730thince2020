@@ -77,6 +77,20 @@
             this.input10bTextBox = new System.Windows.Forms.TextBox();
             this.input10aTextBox = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
+            this.input11bTextBox = new System.Windows.Forms.TextBox();
+            this.input11aTextBox = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.input12bTextBox = new System.Windows.Forms.TextBox();
+            this.input12aTextBox = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.input13bTextBox = new System.Windows.Forms.TextBox();
+            this.input13aTextBox = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.input11cTextBox = new System.Windows.Forms.TextBox();
+            this.input12cTextBox = new System.Windows.Forms.TextBox();
+            this.result13TextBox = new System.Windows.Forms.TextBox();
+            this.result12TextBox = new System.Windows.Forms.TextBox();
+            this.result11TextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -99,7 +113,7 @@
             // 
             // buttonCalc
             // 
-            this.buttonCalc.Location = new System.Drawing.Point(221, 302);
+            this.buttonCalc.Location = new System.Drawing.Point(297, 380);
             this.buttonCalc.Name = "buttonCalc";
             this.buttonCalc.Size = new System.Drawing.Size(75, 23);
             this.buttonCalc.TabIndex = 2;
@@ -521,11 +535,151 @@
             this.label13.TabIndex = 46;
             this.label13.Text = "10:";
             // 
+            // input11bTextBox
+            // 
+            this.input11bTextBox.Location = new System.Drawing.Point(145, 293);
+            this.input11bTextBox.Name = "input11bTextBox";
+            this.input11bTextBox.Size = new System.Drawing.Size(70, 20);
+            this.input11bTextBox.TabIndex = 54;
+            this.input11bTextBox.Text = "25";
+            this.input11bTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // input11aTextBox
+            // 
+            this.input11aTextBox.Location = new System.Drawing.Point(69, 293);
+            this.input11aTextBox.Name = "input11aTextBox";
+            this.input11aTextBox.Size = new System.Drawing.Size(70, 20);
+            this.input11aTextBox.TabIndex = 53;
+            this.input11aTextBox.Text = "true";
+            this.input11aTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(27, 296);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(22, 13);
+            this.label14.TabIndex = 52;
+            this.label14.Text = "11:";
+            // 
+            // input12bTextBox
+            // 
+            this.input12bTextBox.Location = new System.Drawing.Point(145, 319);
+            this.input12bTextBox.Name = "input12bTextBox";
+            this.input12bTextBox.Size = new System.Drawing.Size(70, 20);
+            this.input12bTextBox.TabIndex = 57;
+            this.input12bTextBox.Text = "25";
+            this.input12bTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // input12aTextBox
+            // 
+            this.input12aTextBox.Location = new System.Drawing.Point(69, 319);
+            this.input12aTextBox.Name = "input12aTextBox";
+            this.input12aTextBox.Size = new System.Drawing.Size(70, 20);
+            this.input12aTextBox.TabIndex = 56;
+            this.input12aTextBox.Text = "true";
+            this.input12aTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(27, 322);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(22, 13);
+            this.label15.TabIndex = 55;
+            this.label15.Text = "12:";
+            // 
+            // input13bTextBox
+            // 
+            this.input13bTextBox.Location = new System.Drawing.Point(145, 345);
+            this.input13bTextBox.Name = "input13bTextBox";
+            this.input13bTextBox.Size = new System.Drawing.Size(70, 20);
+            this.input13bTextBox.TabIndex = 60;
+            this.input13bTextBox.Text = "Electronics";
+            this.input13bTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // input13aTextBox
+            // 
+            this.input13aTextBox.Location = new System.Drawing.Point(69, 345);
+            this.input13aTextBox.Name = "input13aTextBox";
+            this.input13aTextBox.Size = new System.Drawing.Size(70, 20);
+            this.input13aTextBox.TabIndex = 59;
+            this.input13aTextBox.Text = "MN";
+            this.input13aTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(27, 348);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(22, 13);
+            this.label16.TabIndex = 58;
+            this.label16.Text = "13:";
+            // 
+            // input11cTextBox
+            // 
+            this.input11cTextBox.Location = new System.Drawing.Point(221, 293);
+            this.input11cTextBox.Name = "input11cTextBox";
+            this.input11cTextBox.Size = new System.Drawing.Size(70, 20);
+            this.input11cTextBox.TabIndex = 61;
+            this.input11cTextBox.Text = "1.0";
+            this.input11cTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // input12cTextBox
+            // 
+            this.input12cTextBox.Location = new System.Drawing.Point(221, 322);
+            this.input12cTextBox.Name = "input12cTextBox";
+            this.input12cTextBox.Size = new System.Drawing.Size(70, 20);
+            this.input12cTextBox.TabIndex = 62;
+            this.input12cTextBox.Text = "1.0";
+            this.input12cTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // result13TextBox
+            // 
+            this.result13TextBox.Location = new System.Drawing.Point(483, 348);
+            this.result13TextBox.Name = "result13TextBox";
+            this.result13TextBox.ReadOnly = true;
+            this.result13TextBox.Size = new System.Drawing.Size(100, 20);
+            this.result13TextBox.TabIndex = 65;
+            this.result13TextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // result12TextBox
+            // 
+            this.result12TextBox.Location = new System.Drawing.Point(483, 322);
+            this.result12TextBox.Name = "result12TextBox";
+            this.result12TextBox.ReadOnly = true;
+            this.result12TextBox.Size = new System.Drawing.Size(100, 20);
+            this.result12TextBox.TabIndex = 64;
+            this.result12TextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // result11TextBox
+            // 
+            this.result11TextBox.Location = new System.Drawing.Point(483, 296);
+            this.result11TextBox.Name = "result11TextBox";
+            this.result11TextBox.ReadOnly = true;
+            this.result11TextBox.Size = new System.Drawing.Size(100, 20);
+            this.result11TextBox.TabIndex = 63;
+            this.result11TextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(723, 341);
+            this.ClientSize = new System.Drawing.Size(723, 430);
+            this.Controls.Add(this.result13TextBox);
+            this.Controls.Add(this.result12TextBox);
+            this.Controls.Add(this.result11TextBox);
+            this.Controls.Add(this.input12cTextBox);
+            this.Controls.Add(this.input11cTextBox);
+            this.Controls.Add(this.input13bTextBox);
+            this.Controls.Add(this.input13aTextBox);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.input12bTextBox);
+            this.Controls.Add(this.input12aTextBox);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.input11bTextBox);
+            this.Controls.Add(this.input11aTextBox);
+            this.Controls.Add(this.label14);
             this.Controls.Add(this.result10TextBox);
             this.Controls.Add(this.input10dTextBox);
             this.Controls.Add(this.input10cTextBox);
@@ -633,6 +787,20 @@
         private System.Windows.Forms.TextBox input10bTextBox;
         private System.Windows.Forms.TextBox input10aTextBox;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox input11bTextBox;
+        private System.Windows.Forms.TextBox input11aTextBox;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox input12bTextBox;
+        private System.Windows.Forms.TextBox input12aTextBox;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox input13bTextBox;
+        private System.Windows.Forms.TextBox input13aTextBox;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.TextBox input11cTextBox;
+        private System.Windows.Forms.TextBox input12cTextBox;
+        private System.Windows.Forms.TextBox result13TextBox;
+        private System.Windows.Forms.TextBox result12TextBox;
+        private System.Windows.Forms.TextBox result11TextBox;
     }
 }
 

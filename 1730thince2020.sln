@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "thince2d1", "thince2d2\thin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "thince2e1", "thince2e1\thince2e1.csproj", "{396EAE0B-B28C-45B2-86C0-761F9FBFF47B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "thincewe1UnitTests", "thincewe1UnitTests\thincewe1UnitTests.csproj", "{36E81FB5-7DA7-4BD8-B4E1-7A0B6AA1426B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{396EAE0B-B28C-45B2-86C0-761F9FBFF47B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{396EAE0B-B28C-45B2-86C0-761F9FBFF47B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{396EAE0B-B28C-45B2-86C0-761F9FBFF47B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36E81FB5-7DA7-4BD8-B4E1-7A0B6AA1426B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36E81FB5-7DA7-4BD8-B4E1-7A0B6AA1426B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36E81FB5-7DA7-4BD8-B4E1-7A0B6AA1426B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36E81FB5-7DA7-4BD8-B4E1-7A0B6AA1426B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
