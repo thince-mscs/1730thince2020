@@ -48,6 +48,21 @@
             this.input5ATextbox = new System.Windows.Forms.TextBox();
             this.input6ATextbox = new System.Windows.Forms.TextBox();
             this.btnCalculate = new System.Windows.Forms.Button();
+            this.input8BTextbox = new System.Windows.Forms.TextBox();
+            this.input7ATextbox = new System.Windows.Forms.TextBox();
+            this.input8ATextbox = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.result7TextBox = new System.Windows.Forms.TextBox();
+            this.result10TextBox = new System.Windows.Forms.TextBox();
+            this.result8TextBox = new System.Windows.Forms.TextBox();
+            this.result9TextBox = new System.Windows.Forms.TextBox();
+            this.input9ATextbox = new System.Windows.Forms.TextBox();
+            this.input10ATextbox = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.input9BTextbox = new System.Windows.Forms.TextBox();
+            this.input10BTextbox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -167,6 +182,7 @@
             this.input6BTextbox.Name = "input6BTextbox";
             this.input6BTextbox.Size = new System.Drawing.Size(40, 20);
             this.input6BTextbox.TabIndex = 18;
+            this.input6BTextbox.Text = "R";
             // 
             // input2ATextbox
             // 
@@ -215,7 +231,7 @@
             // 
             // btnCalculate
             // 
-            this.btnCalculate.Location = new System.Drawing.Point(230, 208);
+            this.btnCalculate.Location = new System.Drawing.Point(206, 312);
             this.btnCalculate.Name = "btnCalculate";
             this.btnCalculate.Size = new System.Drawing.Size(75, 23);
             this.btnCalculate.TabIndex = 24;
@@ -223,11 +239,154 @@
             this.btnCalculate.UseVisualStyleBackColor = true;
             this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
             // 
+            // input8BTextbox
+            // 
+            this.input8BTextbox.Location = new System.Drawing.Point(265, 234);
+            this.input8BTextbox.Name = "input8BTextbox";
+            this.input8BTextbox.Size = new System.Drawing.Size(40, 20);
+            this.input8BTextbox.TabIndex = 25;
+            this.input8BTextbox.Text = "2";
+            // 
+            // input7ATextbox
+            // 
+            this.input7ATextbox.Location = new System.Drawing.Point(159, 208);
+            this.input7ATextbox.Name = "input7ATextbox";
+            this.input7ATextbox.Size = new System.Drawing.Size(100, 20);
+            this.input7ATextbox.TabIndex = 26;
+            this.input7ATextbox.Text = "100.00";
+            this.input7ATextbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // input8ATextbox
+            // 
+            this.input8ATextbox.Location = new System.Drawing.Point(159, 234);
+            this.input8ATextbox.Name = "input8ATextbox";
+            this.input8ATextbox.Size = new System.Drawing.Size(100, 20);
+            this.input8ATextbox.TabIndex = 27;
+            this.input8ATextbox.Text = "25.00";
+            this.input8ATextbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(31, 211);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(83, 13);
+            this.label7.TabIndex = 28;
+            this.label7.Text = "7) Valdiate input";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(31, 237);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(105, 13);
+            this.label8.TabIndex = 29;
+            this.label8.Text = "8) Price * quant, ship";
+            // 
+            // result7TextBox
+            // 
+            this.result7TextBox.Location = new System.Drawing.Point(313, 208);
+            this.result7TextBox.Name = "result7TextBox";
+            this.result7TextBox.ReadOnly = true;
+            this.result7TextBox.Size = new System.Drawing.Size(120, 20);
+            this.result7TextBox.TabIndex = 30;
+            // 
+            // result10TextBox
+            // 
+            this.result10TextBox.Location = new System.Drawing.Point(313, 286);
+            this.result10TextBox.Name = "result10TextBox";
+            this.result10TextBox.ReadOnly = true;
+            this.result10TextBox.Size = new System.Drawing.Size(120, 20);
+            this.result10TextBox.TabIndex = 32;
+            // 
+            // result8TextBox
+            // 
+            this.result8TextBox.Location = new System.Drawing.Point(313, 234);
+            this.result8TextBox.Name = "result8TextBox";
+            this.result8TextBox.ReadOnly = true;
+            this.result8TextBox.Size = new System.Drawing.Size(120, 20);
+            this.result8TextBox.TabIndex = 31;
+            // 
+            // result9TextBox
+            // 
+            this.result9TextBox.Location = new System.Drawing.Point(313, 260);
+            this.result9TextBox.Name = "result9TextBox";
+            this.result9TextBox.ReadOnly = true;
+            this.result9TextBox.Size = new System.Drawing.Size(120, 20);
+            this.result9TextBox.TabIndex = 33;
+            // 
+            // input9ATextbox
+            // 
+            this.input9ATextbox.Location = new System.Drawing.Point(159, 260);
+            this.input9ATextbox.Name = "input9ATextbox";
+            this.input9ATextbox.Size = new System.Drawing.Size(73, 20);
+            this.input9ATextbox.TabIndex = 34;
+            this.input9ATextbox.Text = "10000";
+            this.input9ATextbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // input10ATextbox
+            // 
+            this.input10ATextbox.Location = new System.Drawing.Point(159, 286);
+            this.input10ATextbox.Name = "input10ATextbox";
+            this.input10ATextbox.Size = new System.Drawing.Size(73, 20);
+            this.input10ATextbox.TabIndex = 35;
+            this.input10ATextbox.Text = "1";
+            this.input10ATextbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(31, 263);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(87, 13);
+            this.label9.TabIndex = 36;
+            this.label9.Text = "9) Different * rate";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(31, 289);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(81, 13);
+            this.label10.TabIndex = 37;
+            this.label10.Text = "10) Divide large";
+            // 
+            // input9BTextbox
+            // 
+            this.input9BTextbox.Location = new System.Drawing.Point(238, 260);
+            this.input9BTextbox.Name = "input9BTextbox";
+            this.input9BTextbox.Size = new System.Drawing.Size(69, 20);
+            this.input9BTextbox.TabIndex = 38;
+            this.input9BTextbox.Text = "11000";
+            // 
+            // input10BTextbox
+            // 
+            this.input10BTextbox.Location = new System.Drawing.Point(238, 286);
+            this.input10BTextbox.Name = "input10BTextbox";
+            this.input10BTextbox.Size = new System.Drawing.Size(69, 20);
+            this.input10BTextbox.TabIndex = 39;
+            this.input10BTextbox.Text = "2";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(552, 329);
+            this.ClientSize = new System.Drawing.Size(495, 364);
+            this.Controls.Add(this.input10BTextbox);
+            this.Controls.Add(this.input9BTextbox);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.input10ATextbox);
+            this.Controls.Add(this.input9ATextbox);
+            this.Controls.Add(this.result9TextBox);
+            this.Controls.Add(this.result10TextBox);
+            this.Controls.Add(this.result8TextBox);
+            this.Controls.Add(this.result7TextBox);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.input8ATextbox);
+            this.Controls.Add(this.input7ATextbox);
+            this.Controls.Add(this.input8BTextbox);
             this.Controls.Add(this.btnCalculate);
             this.Controls.Add(this.input6ATextbox);
             this.Controls.Add(this.input5ATextbox);
@@ -277,6 +436,21 @@
         private System.Windows.Forms.TextBox input5ATextbox;
         private System.Windows.Forms.TextBox input6ATextbox;
         private System.Windows.Forms.Button btnCalculate;
+        private System.Windows.Forms.TextBox input8BTextbox;
+        private System.Windows.Forms.TextBox input7ATextbox;
+        private System.Windows.Forms.TextBox input8ATextbox;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox result7TextBox;
+        private System.Windows.Forms.TextBox result10TextBox;
+        private System.Windows.Forms.TextBox result8TextBox;
+        private System.Windows.Forms.TextBox result9TextBox;
+        private System.Windows.Forms.TextBox input9ATextbox;
+        private System.Windows.Forms.TextBox input10ATextbox;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox input9BTextbox;
+        private System.Windows.Forms.TextBox input10BTextbox;
     }
 }
 

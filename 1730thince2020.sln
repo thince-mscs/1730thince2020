@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "thincewe1UnitTests", "thinc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "thince2f1", "thince2f1\thince2f1.csproj", "{C02D9C3E-165B-4769-B024-FE2A1E782B7D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "thince2f1UnitTests", "thince2f1UnitTests\thince2f1UnitTests.csproj", "{7D3151F4-B15D-405D-8FB1-AE0E1636D697}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{C02D9C3E-165B-4769-B024-FE2A1E782B7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C02D9C3E-165B-4769-B024-FE2A1E782B7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C02D9C3E-165B-4769-B024-FE2A1E782B7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D3151F4-B15D-405D-8FB1-AE0E1636D697}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D3151F4-B15D-405D-8FB1-AE0E1636D697}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D3151F4-B15D-405D-8FB1-AE0E1636D697}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D3151F4-B15D-405D-8FB1-AE0E1636D697}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
