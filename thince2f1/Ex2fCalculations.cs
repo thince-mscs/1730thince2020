@@ -130,19 +130,15 @@ namespace thince2f1
             //Calc08 should add a fee of $5 if the total is less than 50
             // if total less than 50 add 5 to total
             // 2 input values, 25.00 Price, 2 Quantity... x both. 
-
             decimal subtotal = 0m;
-            decimal total = 0m;
-            decimal discountPercent = 0m;          
-            discountPercent = 0m;
-            string quantity = (inputB);
-            if (inputA != "25" && inputB != "2")
+            decimal discountPercent = 0m;                            
+            if (inputA != "" && inputB != "")
             {
-                subtotal = Decimal.Parse(inputA);
-                total = 25m * 2m;
+                decimal price = Decimal.Parse(inputA);
+                decimal quantity = Decimal.Parse(inputB);
+                subtotal = price * quantity;
                 if
-                    (total >= 50m);
-                discountPercent + 5m;
+                    (subtotal >= 50m + 5m) ;  
             }
             else
                 discountPercent = 0m;                        
@@ -154,6 +150,12 @@ namespace thince2f1
         {
             // #9 Validate input, calculate difference * rate
             // should not be less than otherwise invalid
+            decimal total = 0m;
+            if (inputA != "" && inputB != "")
+            {
+                
+            }
+            return "Invalid input";
 
             return "Invalid input";
 
@@ -166,6 +168,12 @@ namespace thince2f1
             // if we do 4 divided by 2 it should have the same output as 2 divided by 4
             // if either of these values are empty it should invalid input
             // can't divide by 0
+            decimal total = 0m;
+            if (inputA != "" && inputB != "")
+            {
+                
+            }
+            return "Invalid input";
 
 
             return "Invalid input";
