@@ -152,9 +152,12 @@ namespace thince2f1
             // #9 Validate input, calculate difference * rate
             // should not be less than otherwise invalid
             decimal total = 0m;
+
             if (inputA != "" && inputB != "")
             {
-                
+                decimal price = Decimal.Parse(inputA);
+                decimal quantity = Decimal.Parse(inputB);
+
             }
             return "Invalid input";        
 
