@@ -89,45 +89,133 @@ namespace thince3a1
             }
             return futureValue.ToString("n2");
         }
-        public static string Calc3(string strStart, string strEnd, string strIncrement)
+        public static string Calc3(string strStart, string strEnd, string strIncrement) // set Counter i to 0 then count from start to end and add increment
         {
             string result = "";
+            try
+            {
+                int start = Int32.Parse(strStart);
+                int increment = Int32.Parse(strIncrement);
+                int end = Int32.Parse(strEnd);
 
+              //  string numbers = null;
+              // for (int i = 1; i < 5; i++);
+                   
+
+
+                     if (increment <= 0) throw new Exception();
+            }
+            catch
+            {
+                return "Invalid input";
+            }
             return result;
         }
 
         public static string Calc4(string strStart, string strEnd, string strIncrement)
         {
             string result = "";
+            try
+            {
+                int start = Int32.Parse(strStart);
+                int increment = Int32.Parse(strIncrement);
+                int end = Int32.Parse(strEnd);
+                for (int i = start; i < end; i += increment);
 
+
+                    if (increment <= 0) throw new Exception();
+            }
+            catch
+            {
+                return "Invalid input";
+            }
             return result;
         }
 
         public static string Calc5(string strStart, string strEnd, string strIncrement)
         {
             string result = "";
-
+            try
+            {
+                int start = Int32.Parse(strStart);
+                int increment = Int32.Parse(strIncrement);
+                int end = Int32.Parse(strEnd);
+                for (int i = start; i < end; i += increment)
+                {
+                    result += i + " ";
+                }
+                    if (increment <= 0) throw new Exception();
+            }
+            catch
+            {
+                return "Invalid input";
+            }
             return result;
         }
 
         public static string Calc6(string strNumbers, string strCount)
-        {
+        {    
             string result = "";
+            int startIndex = 0;
+            try
+            {
+                while ();
+                {
+                    int endIndex = strNumbers.IndexOf(' ', startIndex);
+                    string strNumber = strNumbers.Substring(startIndex, endIndex - startIndex);
+                    int number = Int32.Parse(strNumber);
+                    int count = Int32.Parse(strCount);
+                    startIndex = endIndex + 1;
+                }
+            }
+            catch
+            {
 
+            }
             return result;
         }
 
         public static string Calc7(string strNumbers, string strCount)
         {
             string result = "";
+            int startIndex = 0;
+            try
+            {
+                while ( ? )
+                {
+                    int endIndex = strNumbers.IndexOf(' ', startIndex);
+                    string strNumber = strNumbers.Substring(startIndex, endIndex - startIndex);
+                    int number = Int32.Parse(strNumber);
+                    int count = Int32.Parse(strCount);
+                    startIndex = endIndex + 1;
+                }
+            }
+            catch
+            {
 
+            }
             return result;
         }
 
         public static string Calc8(string strNumbers, string strCount)
         {
             string result = "";
+            int startIndex = 0;
+            try
+            {
+                while ( ? )
+                {
+                    int endIndex = strNumbers.IndexOf(' ', startIndex);
+                    string strNumber = strNumbers.Substring(startIndex, endIndex - startIndex);
+                    int number = Int32.Parse(strNumber);
+                    int count = Int32.Parse(strCount);
+                    startIndex = endIndex + 1;
+                }
+            }
+            catch
+            {
 
+            }
             return result;
         }
     }
