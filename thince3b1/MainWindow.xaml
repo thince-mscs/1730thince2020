@@ -67,7 +67,7 @@
             <TextBox x:Name="inputTextBox8a" Grid.Column="1" HorizontalAlignment="Left" Height="24" Margin="0,17,0,5" TextWrapping="Wrap" VerticalAlignment="Center" Width="174" Grid.Row="8" Text="22 14 5 47 12" Grid.ColumnSpan="2"/>
             <TextBox x:Name="inputTextBox8b" Grid.Column="3" HorizontalAlignment="Left" Height="24" Margin="10,14,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="60" Grid.Row="8" Text="5"/>
             <TextBox x:Name="resultTextBox8" Grid.Column="4" HorizontalAlignment="Left" Height="24" Margin="10,17,0,5" TextWrapping="Wrap" VerticalAlignment="Center" Width="86" Grid.Row="8"/>
-            <Button x:Name="calcButton" Content="Calculate" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="9" VerticalAlignment="Center" Width="75" Height="35" Click="calcButton_Click"/>
+            <Button x:Name="calcButton" Content="Calculate" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="9" VerticalAlignment="Center" Width="75" Height="35" Click="CalcButton_Click"/>
         </Grid>
 
     </Grid>

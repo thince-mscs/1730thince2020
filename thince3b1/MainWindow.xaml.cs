@@ -25,11 +25,12 @@ namespace thince3b1
             InitializeComponent();
         }
 
-        private void calcButton_Click(object sender, RoutedEventArgs e) 
+        private void CalcButton_Click(object sender, RoutedEventArgs e) 
             // Method GetDiscountPercent pass it as a decimal (subtotal) 
             // return decimal as (discountPercent)
             // store it here in DP then display result as discountPercent.Tostring("f3");
         {
+            // 0) Calculate discountPercent
             try
             {
                 decimal subtotal = Decimal.Parse(inputTextBox0a.Text);
@@ -38,8 +39,11 @@ namespace thince3b1
             }
             catch
             {
+                resultTextBox0.Text = "";
                 MessageBox.Show("Invalid input: " + this.inputTextBox0a.Text);
             }
+
+            // 2) Calculate futureValue
             try
             {
                 int months = Int32.Parse(this.inputTextBox2a.Text);                    // go to textbox2a parse it as an int and put it into months
@@ -50,10 +54,48 @@ namespace thince3b1
             }
             catch
             {
+                resultTextBox2.Text = "";
                 MessageBox.Show("Invalid input:\n"
                     + this.inputTextBox2a.Text + "\n"
                     + this.inputTextBox2b.Text + "\n"
                     + this.inputTextBox2c.Text + "\n");
+            }
+            // 4) Calculate degrees Celsius
+            try
+            {
+                double fahrenheit = Double.Parse(inputTextBox4a.Text);
+                double celsius = Ex3bCalculations.FahrenheitToCelsius(fahrenheit);
+                resultTextBox4.Text = celsius.ToString("f1");
+            }
+            catch
+            {
+                resultTextBox0.Text = "";
+                MessageBox.Show("Invalid input: " + this.inputTextBox4a.Text);
+            }
+            // 6) GrossPay(hours, rate)
+            try
+            {
+                decimal hours = Decimal.Parse(this.inputTextBox6a.Text);
+                decimal rate = Decimal.Parse(this.inputTextBox6b.Text);
+                this.resultTextBox6.Text = Ex3bCalculations.GrossPay(hours, rate).ToString("c2");
+            }
+            catch
+            {
+                this.resultTextBox6.Text = "";
+                MessageBox.Show("Invalid input:\n"
+                    + this.inputTextBox6a.Text + "\n"
+                    + this.inputTextBox6b.Text);
+            }
+            // 7) TotalHours
+            try
+            {
+                this.resultTextBox7.Text =
+                    Ex3bCalculations.TotalHours(this.inputTextBox7a.Text).ToString("n2");
+            }
+            catch
+            {
+                this.resultTextBox7.Text = "";
+                MessageBox.Show("Invalid input: " + this.inputTextBox7a.Text);
             }
         }
     }

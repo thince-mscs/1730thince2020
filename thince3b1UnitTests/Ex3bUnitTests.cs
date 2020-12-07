@@ -17,20 +17,20 @@ namespace thince3b1UnitTests
         {
             Assert.AreEqual(0.2m, Ex3bCalculations.GetDiscountPercent(500m));
         }
-        //[TestMethod]
-        //public void GetDiscountPercent_Out_Low()
-        //{
-        //    decimal discountPercent = 0m;
-        //    Ex3bCalculations.GetDiscountPercent(499m, out discountPercent);
-        //    Assert.AreEqual(0.1m, discountPercent);
-        //}
-        //[TestMethod]
-        //public void GetDiscountPercent_Out_High()
-        //{
-        //    decimal discountPercent = 0m;
-        //    Ex3bCalculations.GetDiscountPercent(500m, out discountPercent);
-        //    Assert.AreEqual(0.2m, discountPercent);
-        //}
+        [TestMethod]
+        public void GetDiscountPercent_Out_Low()
+        {
+            decimal discountPercent = 0m;
+            Ex3bCalculations.GetDiscountPercent(499m, out discountPercent);
+            Assert.AreEqual(0.1m, discountPercent);
+        }
+        [TestMethod]
+        public void GetDiscountPercent_Out_High()
+        {
+            decimal discountPercent = 0m;
+            Ex3bCalculations.GetDiscountPercent(500m, out discountPercent);
+            Assert.AreEqual(0.2m, discountPercent);
+        }
         [TestMethod]
         public void CalcFutureValue_12Mo100US()
         {
@@ -69,32 +69,32 @@ namespace thince3b1UnitTests
             Assert.AreEqual(0.0,
                 Math.Round(Ex3bCalculations.FahrenheitToCelsius(32.0), 1));
         }
-        //[TestMethod]
-        //public void CelsiusToFahrenheit0()
-        //{
-        //    double fahrenheit = 0.0;
-        //    Ex3bCalculations.CelsiusToFahrenheit(0, out fahrenheit);
-        //    Assert.AreEqual(32.0, Math.Round(fahrenheit, 1));
-        //}
-        //[TestMethod]
-        //public void CelsiusToFahrenheit100()
-        //{
-        //    double fahrenheit = 0.0;
-        //    Ex3bCalculations.CelsiusToFahrenheit(100, out fahrenheit);
-        //    Assert.AreEqual(212.0, Math.Round(fahrenheit, 1));
-        //}
-        //[TestMethod]
-        //public void GrossPay_40_10()
-        //{
-        //    Assert.AreEqual(400m,
-        //        Decimal.Round(Ex3bCalculations.GrossPay(40m, 10m), 2));
-        //}
-        //[TestMethod]
-        //public void GrossPay_50_10()
-        //{
-        //    Assert.AreEqual(550m,
-        //        Decimal.Round(Ex3bCalculations.GrossPay(50m, 10m), 2));
-        //}
+        [TestMethod]
+        public void CelsiusToFahrenheit0()
+        {
+            double fahrenheit = 0.0;
+            Ex3bCalculations.CelsiusToFahrenheit(0, out fahrenheit);
+            Assert.AreEqual(32.0, Math.Round(fahrenheit, 1));
+        }
+        [TestMethod]
+        public void CelsiusToFahrenheit100()
+        {
+            double fahrenheit = 0.0;
+            Ex3bCalculations.CelsiusToFahrenheit(100, out fahrenheit);
+            Assert.AreEqual(212.0, Math.Round(fahrenheit, 1));
+        }
+        [TestMethod]
+        public void GrossPay_40_10()
+        {
+            Assert.AreEqual(400m,
+                Decimal.Round(Ex3bCalculations.GrossPay(40m, 10m), 2));
+        }
+        [TestMethod]
+        public void GrossPay_50_10()
+        {
+            Assert.AreEqual(550m,
+                Decimal.Round(Ex3bCalculations.GrossPay(50m, 10m), 2));
+        }
         //[TestMethod]
         //public void TotalHours()
         //{
